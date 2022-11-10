@@ -63,6 +63,7 @@ public:
 			Node* tmp = start;
 			while (index > 1) {
 				tmp = tmp->next;
+				index--;
 			}
 			Node* newNode = new Node(value, tmp->next);
 			tmp->next = newNode;
